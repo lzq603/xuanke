@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzq.mapper.CourseMapper">
+	<insert id="addCourse" parameterType="Course">
+		INSERT INTO `course` (`bianhao`, `teachId`, `daima`, `mingcheng`, `banhao`, `xuefen`, `xingzhi`, `yuanxi`, `jiaoshi`, `zhicheng`, `shijiandidian`, `youxuan`, `zhuangtai`, `xiaoqu`, `xianzhi`, `caozuo`) VALUES (#{bianhao}, #{teachId}, #{daima}, #{mingcheng}, #{banhao}, #{xuefen}, #{xingzhi}, #{yuanxi}, #{jiaoshi}, #{zhicheng}, #{shijiandidian}, #{youxuan}, #{zhuangtai}, #{xiaoqu}, #{xianzhi}, #{caozuo})
+	</insert>
+</mapper>
